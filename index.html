@@ -11,14 +11,18 @@
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <!-- /CDN Axios -->
         <title>Vue Email List</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- /CSS -->
     </head>
     <body>
 
         <div id="app">
-
-            <ul v-for="(email, index) in emails">
-                <li>{{ emails[index] }}</li>
-            </ul>
+            <div class="container">
+                <ul v-for="(email, index) in emails">
+                    <li>{{ emails[index] }}</li>
+                </ul>
+            </div>
 
         </div>
         
